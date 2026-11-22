@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>العميد للتشطيبات | تشطيب شقق وفيلات ومحلات بأعلى جودة</title>
+<meta name="description" content="العميد للتشطيبات: تشطيب كامل تسليم مفتاح للشقق والفيلات والمحلات والمكاتب. سباكة، كهرباء، محارة، سيراميك، دهانات، جبس بورد، نجارة وألوميتال. اطلب معاينة مجانية.">
+<meta name="theme-color" content="#0f2a43">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f2a43;--navy2:#163b5c;--gold:#c9a24b;--gold2:#e2c176;--bg:#f7f5f0;--ink:#1b2430;--mut:#5d6877;--w:#fff;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}
+section{padding:84px 0}
+h2{font-size:clamp(26px,4vw,38px);font-weight:900;color:var(--navy);text-align:center}
+.sub{text-align:center;color:var(--mut);max-width:620px;margin:8px auto 44px}
+.bar{width:64px;height:4px;background:var(--gold);border-radius:4px;margin:12px auto 10px}
+.btn{display:inline-block;padding:13px 28px;border-radius:50px;font-weight:700;border:2px solid var(--gold);cursor:pointer;font-family:inherit;font-size:16px;transition:.25s}
+.btn-g{background:var(--gold);color:var(--navy)}.btn-g:hover{background:var(--gold2)}
+.btn-o{color:#fff;border-color:rgba(255,255,255,.55)}.btn-o:hover{background:rgba(255,255,255,.12)}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(15,42,67,.96);backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:900;font-size:21px}
+.logo i{width:38px;height:38px;border-radius:10px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-style:normal;font-size:22px}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{color:#dbe4ee;font-weight:600;font-size:15px}nav a:hover{color:var(--gold2)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer}
+@media(max-width:860px){
+ .burger{display:block}
+ nav ul{position:absolute;top:70px;right:0;left:0;background:var(--navy);flex-direction:column;gap:0;display:none}
+ nav ul.open{display:flex}nav li a{display:block;padding:14px 22px;border-top:1px solid rgba(255,255,255,.08)}
+ .nav .btn{display:none}
+}
+
+/* hero */
+.hero{background:linear-gradient(135deg,rgba(15,42,67,.96),rgba(22,59,92,.88)),repeating-linear-gradient(45deg,#16385a 0 14px,#123350 14px 28px);color:#fff;padding:110px 0 90px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;left:-120px;bottom:-120px;width:420px;height:420px;border:60px solid rgba(201,162,75,.12);border-radius:50%}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:rgba(201,162,75,.18);color:var(--gold2);padding:6px 16px;border-radius:30px;font-weight:700;font-size:14px;margin-bottom:16px}
+.hero h1{font-size:clamp(34px,5.5vw,58px);font-weight:900;line-height:1.35}
+.hero h1 span{color:var(--gold2)}
+.hero p{color:#cfd9e5;margin:18px 0 30px;font-size:18px;max-width:520px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.card-q{background:#fff;color:var(--ink);border-radius:20px;padding:28px;box-shadow:0 25px 60px rgba(0,0,0,.35)}
+.card-q h3{color:var(--navy);margin-bottom:4px}
+.card-q p{color:var(--mut);font-size:14px;margin:0 0 14px}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero{padding:70px 0}}
+
+/* forms */
+.f{display:grid;gap:12px}
+.f input,.f select,.f textarea{width:100%;padding:12px 14px;border:1.5px solid #d9dee5;border-radius:12px;font-family:inherit;font-size:15px;background:#fff;color:var(--ink)}
+.f input:focus,.f select:focus,.f textarea:focus{outline:0;border-color:var(--gold)}
+.f .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.f .btn{width:100%}
+
+/* stats */
+.stats{background:var(--navy);color:#fff;padding:38px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stats b{display:block;font-size:38px;color:var(--gold2);font-weight:900}
+.stats span{color:#cfd9e5;font-size:15px}
+@media(max-width:700px){.stats .wrap{grid-template-columns:repeat(2,1fr)}}
+
+/* services */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.svc{background:#fff;border-radius:var(--r);padding:28px;box-shadow:0 6px 24px rgba(15,42,67,.07);transition:.3s;border-bottom:4px solid transparent}
+.svc:hover{transform:translateY(-6px);border-color:var(--gold)}
+.ico{width:58px;height:58px;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--navy2));display:grid;place-items:center;font-size:28px;margin-bottom:14px}
+.svc h3{color:var(--navy);font-size:19px;margin-bottom:6px}
+.svc p{color:var(--mut);font-size:15px}
+
+/* packages */
+.alt{background:#fff}
+.pk{background:var(--bg);border-radius:20px;padding:32px 26px;border:2px solid #e6e1d4;position:relative;display:flex;flex-direction:column}
+.pk.hot{background:var(--navy);color:#fff;border-color:var(--gold);transform:scale(1.03)}
+.pk.hot h3,.pk.hot li{color:#fff}
+.pk .badge{position:absolute;top:-14px;right:24px;background:var(--gold);color:var(--navy);font-weight:900;font-size:13px;padding:3px 16px;border-radius:20px}
+.pk h3{font-size:24px;color:var(--navy)}
+.pk .d{color:var(--mut);font-size:14px;margin-bottom:14px}.pk.hot .d{color:#cfd9e5}
+.pk ul{list-style:none;margin-bottom:22px;flex:1}
+.pk li{padding:6px 0 6px 0;font-size:15px;border-bottom:1px dashed rgba(120,120,120,.25)}
+.pk li:before{content:"✓ ";color:var(--gold);font-weight:900}
+@media(max-width:700px){.pk.hot{transform:none}}
+
+/* process */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px}
+.st{background:#fff;border-radius:var(--r);padding:26px 22px;text-align:center;position:relative;box-shadow:0 6px 24px rgba(15,42,67,.07)}
+.st:before{counter-increment:s;content:counter(s);position:absolute;top:-18px;right:50%;transform:translateX(50%);width:38px;height:38px;border-radius:50%;background:var(--gold);color:var(--navy);font-weight:900;display:grid;place-items:center}
+.st h3{margin-top:12px;color:var(--navy);font-size:18px}
+.st p{color:var(--mut);font-size:14px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.g{height:230px;border-radius:var(--r);position:relative;overflow:hidden;display:flex;align-items:flex-end;color:#fff}
+.g:before{content:"";position:absolute;inset:0;background:var(--bg1);transition:.4s}
+.g:hover:before{transform:scale(1.08)}
+.g:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,.7))}
+.g div{position:relative;z-index:1;padding:16px}
+.g b{display:block;font-size:18px}.g small{opacity:.85}
+.note{text-align:center;color:var(--mut);font-size:13px;margin-top:16px}
+
+/* why */
+.why{background:var(--navy);color:#fff}
+.why h2{color:#fff}.why .sub{color:#cfd9e5}
+.why .svc{background:rgba(255,255,255,.06);box-shadow:none}
+.why .svc h3{color:var(--gold2)}.why .svc p{color:#cfd9e5}
+.why .ico{background:var(--gold)}
+
+/* areas */
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.chips span{background:#fff;border:1.5px solid #e6e1d4;padding:8px 20px;border-radius:30px;font-weight:600;color:var(--navy)}
+
+/* faq */
+.faq{max-width:800px;margin:auto}
+details{background:#fff;border-radius:14px;margin-bottom:12px;box-shadow:0 4px 16px rgba(15,42,67,.06);overflow:hidden}
+summary{padding:18px 22px;font-weight:700;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--gold);font-size:24px;line-height:1}
+details[open] summary:after{content:"−"}
+details p{padding:0 22px 18px;color:var(--mut)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.info{display:grid;gap:14px}
+.info a,.info div{background:#fff;border-radius:14px;padding:18px 22px;display:flex;gap:14px;align-items:center;box-shadow:0 4px 16px rgba(15,42,67,.06)}
+.info b{display:block;color:var(--navy)}.info span{color:var(--mut);font-size:14px}
+.info em{font-style:normal;font-size:26px}
+.box{background:#fff;border-radius:20px;padding:28px;box-shadow:0 10px 36px rgba(15,42,67,.1)}
+@media(max-width:800px){.contact{grid-template-columns:1fr}}
+
+footer{background:#0a1d2f;color:#aeb9c6;text-align:center;padding:30px 0;font-size:14px}
+footer b{color:var(--gold2)}
+.wa{position:fixed;bottom:20px;left:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:30px;color:#fff}
+.call{position:fixed;bottom:92px;left:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--gold);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:26px}
+.rv{opacity:0;transform:translateY(24px);transition:.7s}.rv.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap nav">
+  <a href="#top" class="logo"><i>ع</i> العميد للتشطيبات</a>
+  <nav>
+   <button class="burger" id="bg" aria-label="القائمة">☰</button>
+   <ul id="menu">
+    <li><a href="#services">خدماتنا</a></li>
+    <li><a href="#packages">الباقات</a></li>
+    <li><a href="#process">خطوات العمل</a></li>
+    <li><a href="#gallery">أعمالنا</a></li>
+    <li><a href="#why">لماذا العميد</a></li>
+    <li><a href="#faq">أسئلة شائعة</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
+   </ul>
+  </nav>
+  <a href="#contact" class="btn btn-g" style="padding:9px 22px">معاينة مجانية</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding-bottom:90px">
+ <div class="wrap">
+  <div>
+   <span class="tag">تشطيب شقق • فيلات • محلات • مكاتب</span>
+   <h1>مكانك بيستاهل <span>تشطيب يتفاخر بيه</span></h1>
+   <p>العميد للتشطيبات بيسلّمك مكانك تسليم مفتاح: تصميم، تنفيذ، وإشراف هندسي كامل بخامات مضمونة وأسعار واضحة والتزام بمواعيد التسليم.</p>
+   <div class="cta">
+    <a href="#contact" class="btn btn-g">اطلب عرض سعر</a>
+    <a href="#gallery" class="btn btn-o">شوف أعمالنا</a>
+   </div>
+  </div>
+  <div class="card-q">
+   <h3>احسب تكلفة تشطيبك تقريبًا</h3>
+   <p>املأ البيانات وابعتها لنا على واتساب ونرد عليك بعرض سعر مفصل.</p>
+   <form class="f" id="quick">
+    <input name="name" placeholder="الاسم" required>
+    <div class="row">
+     <select name="type"><option>شقة</option><option>فيلا</option><option>دوبلكس</option><option>محل</option><option>مكتب / عيادة</option></select>
+     <input name="area" type="number" min="20" placeholder="المساحة م²" required>
+    </div>
+    <select name="level"><option>تشطيب اقتصادي</option><option selected>تشطيب لوكس</option><option>تشطيب سوبر لوكس</option><option>مش متأكد</option></select>
+    <button class="btn btn-g" type="submit">ابعت على واتساب</button>
+   </form>
+  </div>
+ </div>
+</section>
+
+<div class="stats">
+ <div class="wrap">
+  <div><b data-n="12">0</b><span>سنة خبرة</span></div>
+  <div><b data-n="350">0</b><span>مشروع منفّذ</span></div>
+  <div><b data-n="40">0</b><span>فني ومهندس</span></div>
+  <div><b data-n="5">0</b><span>سنوات ضمان</span></div>
+ </div>
+</div>
+
+<section id="services">
+ <div class="wrap">
+  <h2>خدماتنا</h2><div class="bar"></div>
+  <p class="sub">كل مراحل التشطيب تحت سقف واحد، من أول الخرسانة لحد ما تستلم المفتاح.</p>
+  <div class="grid">
+   <div class="svc rv"><div class="ico">🧱</div><h3>أعمال المحارة واللياسة</h3><p>محارة مستوية بالمسطرة والميزان، وزوايا وركن مظبوطة، مع معالجة الشروخ والرطوبة.</p></div>
+   <div class="svc rv"><div class="ico">🚿</div><h3>السباكة والصرف</h3><p>تأسيس وتركيب مواسير حديثة، اختبار ضغط قبل التغطية، وتركيب الأطقم الصحية والمطابخ.</p></div>
+   <div class="svc rv"><div class="ico">💡</div><h3>الكهرباء والإنارة</h3><p>تأسيس كهرباء بأسلاك معتمدة ولوحات توزيع آمنة، وتركيب إنارة ديكورية وسبوتات ولدات.</p></div>
+   <div class="svc rv"><div class="ico">🔲</div><h3>سيراميك وبورسلين ورخام</h3><p>تركيب أرضيات وحوائط بفواصل منتظمة، وأعمال الرخام والجرانيت والبانيوهات.</p></div>
+   <div class="svc rv"><div class="ico">🎨</div><h3>الدهانات والديكور</h3><p>دهانات بلاستيك وزيت وأكريليك، ورق حائط، وأسطح ديكورية واستركشر حديث.</p></div>
+   <div class="svc rv"><div class="ico">🏛️</div><h3>جبس بورد وأسقف معلقة</h3><p>أسقف فالس، كرانيش، إضاءة مخفية، وتقسيمات جبسية بتصميمات عصرية.</p></div>
+   <div class="svc rv"><div class="ico">🚪</div><h3>النجارة والأبواب</h3><p>أبواب خشب وMDF، مطابخ، دريسنج روم، ووحدات مفصلة حسب المقاس.</p></div>
+   <div class="svc rv"><div class="ico">🪟</div><h3>ألوميتال وزجاج</h3><p>شبابيك وأبواب ألوميتال وسكريت، وواجهات زجاجية وحواجز شاور.</p></div>
+   <div class="svc rv"><div class="ico">❄️</div><h3>التكييف والتهوية</h3><p>تأسيس وتركيب تكييفات سبليت ومركزي مع تمديدات نحاس ومواسير تصريف مخفية.</p></div>
+   <div class="svc rv"><div class="ico">📐</div><h3>التصميم الداخلي</h3><p>مخططات ومناظير ثلاثية الأبعاد قبل التنفيذ عشان تشوف شكل مكانك النهائي.</p></div>
+   <div class="svc rv"><div class="ico">🏗️</div><h3>ترميم وتجديد</h3><p>تجديد الشقق القديمة، إزالة وتكسير وإعادة تأسيس، وعزل أسطح وحمامات.</p></div>
+   <div class="svc rv"><div class="ico">🔑</div><h3>تسليم مفتاح</h3><p>نستلم المكان خام ونسلّمه جاهز للسكن بكل تفاصيله وتنظيف نهائي.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="packages" class="alt">
+ <div class="wrap">
+  <h2>باقات التشطيب</h2><div class="bar"></div>
+  <p class="sub">اختار الباقة اللي تناسب ميزانيتك، والأسعار بتتحدد بعد المعاينة وحسب المساحة والخامات.</p>
+  <div class="grid">
+   <div class="pk rv"><h3>اقتصادي</h3><div class="d">عملي وبميزانية محسوبة</div>
+    <ul><li>محارة وتأسيس كامل</li><li>سيراميك محلي درجة أولى</li><li>دهانات بلاستيك</li><li>أبواب خشب عادي</li><li>إنارة أساسية</li></ul>
+    <a class="btn btn-g" href="#contact">اطلب السعر</a></div>
+   <div class="pk hot rv"><span class="badge">الأكثر طلبًا</span><h3>لوكس</h3><div class="d">توازن مثالي بين الجودة والسعر</div>
+    <ul><li>سيراميك وبورسلين مستورد</li><li>جبس بورد وإضاءة مخفية</li><li>دهانات جوتن أو سكوتش جارد</li><li>أبواب MDF أو خشب زان</li><li>أطقم صحية ماركات معروفة</li><li>ألوميتال سلايدينج</li></ul>
+    <a class="btn btn-g" href="#contact">اطلب السعر</a></div>
+   <div class="pk rv"><h3>سوبر لوكس</h3><div class="d">فخامة بدون أي تنازلات</div>
+    <ul><li>رخام وجرانيت طبيعي</li><li>ديكورات وأسقف مبتكرة</li><li>أبواب خشب طبيعي وتفصيل</li><li>مطبخ ودريسنج مفصّل</li><li>سمارت هوم وإضاءة ذكية</li><li>تصميم داخلي ومناظير 3D</li></ul>
+    <a class="btn btn-g" href="#contact">اطلب السعر</a></div>
+  </div>
+ </div>
+</section>
+
+<section id="process">
+ <div class="wrap">
+  <h2>خطوات العمل معنا</h2><div class="bar"></div>
+  <p class="sub">خطوات واضحة من أول مكالمة لحد التسليم.</p>
+  <div class="steps">
+   <div class="st rv"><h3>معاينة مجانية</h3><p>مهندسنا بيزور الموقع ويقيس ويسمع متطلباتك.</p></div>
+   <div class="st rv"><h3>عرض سعر مفصل</h3><p>بنود وكميات وأسعار واضحة بدون مفاجآت.</p></div>
+   <div class="st rv"><h3>تصميم واعتماد</h3><p>مخطط ومناظير وخامات تختارها بنفسك.</p></div>
+   <div class="st rv"><h3>تنفيذ بإشراف</h3><p>مهندس موقع ومتابعة يومية وتقارير بالصور.</p></div>
+   <div class="st rv"><h3>فحص وتسليم</h3><p>مراجعة نهائية وتنظيف وتسليم المفتاح بالموعد.</p></div>
+   <div class="st rv"><h3>ضمان وصيانة</h3><p>ضمان مكتوب وخدمة ما بعد التسليم.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="gallery" class="alt">
+ <div class="wrap">
+  <h2>معرض أعمالنا</h2><div class="bar"></div>
+  <p class="sub">نماذج من أنواع المشاريع اللي بننفذها.</p>
+  <div class="gal">
+   <div class="g rv" style="--bg1:linear-gradient(135deg,#1d4468,#0f2a43)"><div><b>شقق سكنية</b><small>ريسيبشن • غرف نوم • مطابخ</small></div></div>
+   <div class="g rv" style="--bg1:linear-gradient(135deg,#c9a24b,#8a6a22)"><div><b>فيلات ودوبلكس</b><small>واجهات وحدائق وسلالم</small></div></div>
+   <div class="g rv" style="--bg1:linear-gradient(135deg,#4b6b5c,#24392f)"><div><b>محلات تجارية</b><small>تشطيب سريع بتصميم جذاب</small></div></div>
+   <div class="g rv" style="--bg1:linear-gradient(135deg,#6b4b6b,#33233a)"><div><b>مكاتب وعيادات</b><small>تقسيمات وأسقف وإضاءة</small></div></div>
+   <div class="g rv" style="--bg1:linear-gradient(135deg,#7a5c3b,#3d2b18)"><div><b>مطابخ ودريسنج</b><small>تفصيل حسب المقاس</small></div></div>
+   <div class="g rv" style="--bg1:linear-gradient(135deg,#3b6f7a,#173b43)"><div><b>حمامات عصرية</b><small>سيراميك ورخام وبانيو</small></div></div>
+  </div>
+  <p class="note">يمكنك استبدال هذه البطاقات بصور مشاريعكم الحقيقية (انظر ملف README).</p>
+ </div>
+</section>
+
+<section id="why" class="why">
+ <div class="wrap">
+  <h2>لماذا العميد للتشطيبات؟</h2><div class="bar"></div>
+  <p class="sub">لأن ثقتك أهم من أي عقد.</p>
+  <div class="grid">
+   <div class="svc"><div class="ico">📅</div><h3>التزام بالمواعيد</h3><p>جدول زمني مكتوب وغرامة تأخير في العقد.</p></div>
+   <div class="svc"><div class="ico">💰</div><h3>أسعار شفافة</h3><p>مقايسة بنود مفصلة، ولا أي إضافات مخفية.</p></div>
+   <div class="svc"><div class="ico">🛡️</div><h3>ضمان مكتوب</h3><p>ضمان على الأعمال وخدمة صيانة بعد التسليم.</p></div>
+   <div class="svc"><div class="ico">👷</div><h3>إشراف هندسي</h3><p>مهندس متخصص على كل مشروع طول فترة التنفيذ.</p></div>
+   <div class="svc"><div class="ico">⭐</div><h3>خامات أصلية</h3><p>بنتعامل مع أفضل الموردين وبتختار الخامات بنفسك.</p></div>
+   <div class="svc"><div class="ico">🤝</div><h3>دفعات على مراحل</h3><p>تدفع على حسب نسبة الإنجاز الفعلية.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="areas">
+ <div class="wrap">
+  <h2>مناطق التغطية</h2><div class="bar"></div>
+  <p class="sub">بنخدمك في المدن والمناطق التالية وغيرها، اسألنا عن منطقتك.</p>
+  <div class="chips">
+   <span>القاهرة</span><span>الجيزة</span><span>القاهرة الجديدة</span><span>التجمع الخامس</span><span>الشيخ زايد</span><span>6 أكتوبر</span><span>مدينة نصر</span><span>العاصمة الإدارية</span><span>الإسكندرية</span>
+  </div>
+ </div>
+</section>
+
+<section id="faq" class="alt">
+ <div class="wrap">
+  <h2>أسئلة شائعة</h2><div class="bar"></div>
+  <p class="sub">إجابات سريعة لأكتر الأسئلة اللي بتتسأل لنا.</p>
+  <div class="faq">
+   <details><summary>هل المعاينة مجانية؟</summary><p>أيوه، المعاينة وعرض السعر مجانًا ومن غير أي التزام.</p></details>
+   <details><summary>كام يوم بياخد تشطيب شقة؟</summary><p>بيختلف حسب المساحة ومستوى التشطيب، وغالبًا من 45 إلى 90 يوم. بنحدد المدة بدقة في العقد بعد المعاينة.</p></details>
+   <details><summary>مين بيوفر الخامات؟</summary><p>تقدر تختار: إحنا نوفر الخامات بأسعار الجملة، أو نشتغل بخاماتك وتبقى المصنعية فقط.</p></details>
+   <details><summary>هل في ضمان على الشغل؟</summary><p>أيوه، ضمان مكتوب على الأعمال، ومدته بتتحدد في العقد حسب نوع البند.</p></details>
+   <details><summary>إزاي بتتم الدفعات؟</summary><p>دفعة مقدمة عند التعاقد، وباقي الدفعات على مراحل حسب نسبة الإنجاز.</p></details>
+   <details><summary>بتشتغلوا في تصميم الديكور كمان؟</summary><p>أكيد، عندنا فريق تصميم بيجهز لك مخططات ومناظير 3D قبل بداية التنفيذ.</p></details>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <h2>تواصل معنا</h2><div class="bar"></div>
+  <p class="sub">ابعت لنا تفاصيل مشروعك وهنرد عليك في أقرب وقت.</p>
+  <div class="contact">
+   <div class="info">
+    <a href="tel:+201000000000"><em>📞</em><div style="padding:0;box-shadow:none"><b>اتصل بنا</b><span dir="ltr">+20 100 000 0000</span></div></a>
+    <a href="https://wa.me/201000000000" target="_blank" rel="noopener"><em>💬</em><div style="padding:0;box-shadow:none"><b>واتساب</b><span>رد سريع طوال اليوم</span></div></a>
+    <div><em>📍</em><div style="padding:0;box-shadow:none"><b>العنوان</b><span>القاهرة، مصر</span></div></div>
+    <div><em>🕘</em><div style="padding:0;box-shadow:none"><b>مواعيد العمل</b><span>من السبت إلى الخميس، 9 ص - 8 م</span></div></div>
+   </div>
+   <div class="box">
+    <form class="f" id="contactForm">
+     <input name="name" placeholder="الاسم" required>
+     <input name="phone" type="tel" placeholder="رقم الموبايل" required>
+     <div class="row">
+      <select name="type"><option>شقة</option><option>فيلا</option><option>دوبلكس</option><option>محل</option><option>مكتب / عيادة</option></select>
+      <input name="loc" placeholder="المنطقة">
+     </div>
+     <textarea name="msg" rows="4" placeholder="اكتب تفاصيل المشروع"></textarea>
+     <button class="btn btn-g" type="submit">إرسال عبر واتساب</button>
+    </form>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">© <span id="y"></span> <b>العميد للتشطيبات</b> — جميع الحقوق محفوظة</div>
+</footer>
+
+<a class="call" href="tel:+201000000000" aria-label="اتصل">📞</a>
+<a class="wa" href="https://wa.me/201000000000" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+
+<script>
+// ====== عدّل رقم الواتساب هنا (بصيغة دولية بدون + أو أصفار) ======
+const WHATSAPP = "201000000000";
+// ===============================================================
+const $=s=>document.querySelector(s);
+$('#y').textContent=new Date().getFullYear();
+$('#bg').onclick=()=>$('#menu').classList.toggle('open');
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>$('#menu').classList.remove('open'));
+function send(text){window.open('https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(text),'_blank')}
+$('#quick').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
+ send(`السلام عليكم، أنا ${f.get('name')}.\nعايز عرض سعر تشطيب ${f.get('type')} مساحتها ${f.get('area')} م².\nالمستوى: ${f.get('level')}`)};
+$('#contactForm').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
+ send(`السلام عليكم، أنا ${f.get('name')}.\nموبايل: ${f.get('phone')}\nنوع المشروع: ${f.get('type')}\nالمنطقة: ${f.get('loc')}\nالتفاصيل: ${f.get('msg')}`)};
+document.querySelectorAll('a[href^="https://wa.me"]').forEach(a=>a.href='https://wa.me/'+WHATSAPP);
+document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.href='tel:+'+WHATSAPP);
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const co=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){const el=x.target,n=+el.dataset.n;let c=0;const t=setInterval(()=>{c+=Math.ceil(n/40);if(c>=n){c=n;clearInterval(t)}el.textContent=c+'+'},30);co.unobserve(el)}}),{threshold:.6});
+document.querySelectorAll('[data-n]').forEach(el=>co.observe(el));
+</script>
+</body>
+</html>
